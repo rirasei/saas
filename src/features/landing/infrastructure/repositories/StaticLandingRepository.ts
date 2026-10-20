@@ -6,7 +6,7 @@ export class StaticLandingRepository implements ILandingRepository {
     return {
       hero: {
         badge: 'CloudNote 3.0 공식 출시',
-        headline: '생각을 기록하고, 팀과 실시간으로 연결하세요',
+        headline: '생각을 기록하고, 팀과 실시간으로 연결하세요!!!',
         subheadline:
           'Markdown 완벽 지원, AI 지능형 요약 및 실시간 클라우드 자동 동기화로 생산성을 극대화하는 올인원 메모 워크스페이스. 복잡한 아이디어를 가장 명료한 지식으로 바꿉니다.',
         trialText: '무료로 시작하기 (14일 체험)',

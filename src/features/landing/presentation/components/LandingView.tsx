@@ -38,7 +38,7 @@ export const LandingView: React.FC<LandingViewProps> = ({ data }) => {
                 <span className="text-primary underline decoration-primary-fixed decoration-4 underline-offset-8">
                   실시간으로 연결
                 </span>
-                하세요
+                하세요!!!
               </h1>
 
               <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
