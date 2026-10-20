@@ -20,9 +20,34 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://saas-rirasei.vercel.app'),
   title: 'CloudNote - 생각을 기록하고 팀과 실시간으로 연결하세요!!!',
   description:
     'CRDT 기반 실시간 다중 협업, 오프라인-퍼스트 동기화, 내장 AI 지능형 분석을 결합한 차세대 올인원 마크다운/블록 메모 워크스페이스',
+  openGraph: {
+    type: 'website',
+    locale: 'ko_KR',
+    url: '/',
+    siteName: 'CloudNote',
+    title: 'CloudNote - 생각을 기록하고 팀과 실시간으로 연결하세요!!!',
+    description:
+      'CRDT 실시간 다중 협업, AI 지능형 요약, 오프라인 동기화를 지원하는 차세대 올인원 마크다운 워크스페이스',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'CloudNote - 생각을 기록하고 팀과 실시간으로 연결하세요',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'CloudNote - 생각을 기록하고 팀과 실시간으로 연결하세요!!!',
+    description:
+      'CRDT 실시간 다중 협업, AI 지능형 요약, 오프라인 동기화를 지원하는 차세대 올인원 마크다운 워크스페이스',
+    images: ['/og-image.png'],
+  },
 };
 
 export default function RootLayout({
