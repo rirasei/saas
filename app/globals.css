@@ -1,26 +1,201 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: block;
+  src: url('https://fonts.gstatic.com/s/materialsymbolsoutlined/v377/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsLjBuVY.woff2') format('woff2');
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@utility material-symbols-outlined {
+  font-family: 'Material Symbols Outlined' !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+  --color-surface-container-low: #eff4ff;
+  --color-on-tertiary-container: #ffede6;
+  --color-secondary: #006a61;
+  --color-on-secondary-fixed-variant: #005049;
+  --color-primary-fixed: #dbe1ff;
+  --color-outline-variant: #c3c6d7;
+  --color-surface-bright: #f8f9ff;
+  --color-on-primary: #ffffff;
+  --color-inverse-primary: #b4c5ff;
+  --color-on-error-container: #93000a;
+  --color-primary: #004ac6;
+  --color-secondary-fixed-dim: #6bd8cb;
+  --color-secondary-fixed: #89f5e7;
+  --color-secondary-container: #86f2e4;
+  --color-on-secondary-container: #006f66;
+  --color-error-container: #ffdad6;
+  --color-on-background: #0b1c30;
+  --color-error: #ba1a1a;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-lowest: #ffffff;
+  --color-outline: #737686;
+  --color-on-tertiary: #ffffff;
+  --color-surface-dim: #cbdbf5;
+  --color-surface: #f8f9ff;
+  --color-on-surface-variant: #434655;
+  --color-on-error: #ffffff;
+  --color-tertiary: #943700;
+  --color-primary-container: #2563eb;
+  --color-background: #f8f9ff;
+  --color-surface-container-highest: #d3e4fe;
+  --color-on-primary-container: #eeefff;
+  --color-surface-tint: #0053db;
+  --color-on-surface: #0b1c30;
+  --color-tertiary-fixed-dim: #ffb596;
+  --color-tertiary-fixed: #ffdbcd;
+  --color-surface-container-high: #dce9ff;
+  --color-inverse-on-surface: #eaf1ff;
+  --color-on-secondary-fixed: #00201d;
+  --color-primary-fixed-dim: #b4c5ff;
+  --color-on-tertiary-fixed-variant: #7d2d00;
+  --color-on-primary-fixed: #00174b;
+  --color-on-secondary: #ffffff;
+  --color-on-primary-fixed-variant: #003ea8;
+  --color-surface-variant: #d3e4fe;
+  --color-on-tertiary-fixed: #360f00;
+  --color-inverse-surface: #213145;
+  --color-tertiary-container: #bc4800;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+  --spacing-margin: 2rem;
+  --spacing-margin-sm: 1rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-gutter-sm: 1rem;
+
+  --font-body-lg: "Plus Jakarta Sans", sans-serif;
+  --font-body-md: "Plus Jakarta Sans", sans-serif;
+  --font-body-sm: "Plus Jakarta Sans", sans-serif;
+  --font-headline-lg: "Geist", sans-serif;
+  --font-headline-md: "Geist", sans-serif;
+  --font-headline-sm: "Geist", sans-serif;
+  --font-title: "Plus Jakarta Sans", sans-serif;
+  --font-label-md: "Geist", sans-serif;
+  --font-label-sm: "Geist", sans-serif;
+  --font-code: "JetBrains Mono", monospace;
+  --font-display: "Geist", sans-serif;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9ff;
+    color: #0b1c30;
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+}
+
+.font-headline-lg {
+  font-family: var(--font-headline-lg);
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+}
+
+.font-headline-md {
+  font-family: var(--font-headline-md);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.font-headline-sm {
+  font-family: var(--font-headline-sm);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+}
+
+.font-title {
+  font-family: var(--font-title);
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+.font-body-md {
+  font-family: var(--font-body-md);
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+}
+
+.font-body-sm {
+  font-family: var(--font-body-sm);
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+}
+
+.font-label-md {
+  font-family: var(--font-label-md);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.005em;
+  font-weight: 500;
+}
+
+.font-label-sm {
+  font-family: var(--font-label-sm);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+}
+
+.font-code {
+  font-family: var(--font-code);
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: -0.03em;
+  font-weight: 600;
 }

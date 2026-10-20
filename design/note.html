@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-low":"#eff4ff","on-tertiary-container":"#ffede6","secondary":"#006a61","on-secondary-fixed-variant":"#005049","primary-fixed":"#dbe1ff","outline-variant":"#c3c6d7","surface-bright":"#f8f9ff","on-primary":"#ffffff","inverse-primary":"#b4c5ff","on-error-container":"#93000a","primary":"#004ac6","secondary-fixed-dim":"#6bd8cb","secondary-fixed":"#89f5e7","secondary-container":"#86f2e4","on-secondary-container":"#006f66","error-container":"#ffdad6","on-background":"#0b1c30","error":"#ba1a1a","surface-container":"#e5eeff","surface-container-lowest":"#ffffff","outline":"#737686","on-tertiary":"#ffffff","surface-dim":"#cbdbf5","surface":"#f8f9ff","on-surface-variant":"#434655","on-error":"#ffffff","tertiary":"#943700","primary-container":"#2563eb","background":"#f8f9ff","surface-container-highest":"#d3e4fe","on-primary-container":"#eeefff","surface-tint":"#0053db","on-surface":"#0b1c30","tertiary-fixed-dim":"#ffb596","tertiary-fixed":"#ffdbcd","surface-container-high":"#dce9ff","inverse-on-surface":"#eaf1ff","on-secondary-fixed":"#00201d","primary-fixed-dim":"#b4c5ff","on-tertiary-fixed-variant":"#7d2d00","on-primary-fixed":"#00174b","on-secondary":"#ffffff","on-primary-fixed-variant":"#003ea8","surface-variant":"#d3e4fe","on-tertiary-fixed":"#360f00","inverse-surface":"#213145","tertiary-container":"#bc4800"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1.5rem","margin":"2rem","space-xs":"0.25rem","gutter-sm":"1rem","space-sm":"0.5rem","space-md":"1rem","gutter":"1.5rem","margin-sm":"1rem","space-xl":"2.5rem"},fontFamily:{"body-lg":["Plus Jakarta Sans"],"headline-lg":["Geist"],"headline-md":["Geist"],"body-sm":["Plus Jakarta Sans"],"label-sm":["Geist"],"body-md":["Plus Jakarta Sans"],"code":["JetBrains Mono"],"display":["Geist"],"headline-sm":["Geist"],"label-md":["Geist"],"title":["Plus Jakarta Sans"],"headline-lg-mobile":["Geist"]},fontSize:{"body-lg":["1.0625rem",{"lineHeight":"1.75rem","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-lg":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.025em","fontWeight":"600"}],"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.02em","fontWeight":"600"}],"body-sm":["0.8125rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"400"}],"label-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.01em","fontWeight":"500"}],"body-md":["0.9375rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"code":["0.8125rem",{"lineHeight":"1.375rem","letterSpacing":"0","fontWeight":"400"}],"display":["3rem",{"lineHeight":"3.5rem","letterSpacing":"-0.03em","fontWeight":"600"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.015em","fontWeight":"600"}],"label-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.005em","fontWeight":"500"}],"title":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.02em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col pt-4 pb-6 shadow-[1px_0_8px_rgba(0,0,0,0.03)]"><div class="px-6 mb-6 flex items-center gap-3"><img alt="CloudNote Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WXwYrLwnTgudpGjqOU6T4LXABy28zyKEKhS8z7Ru3V68xFHA1Yso84sey-CuWw7qbg0F9x8OYP-fKKQ4uKFpzd-heVxZJ5DnQusmveYu9OCr1yY7pU5Aqa76rq4GM1hX84V_iD5KZ6VoUFy68AtVFAlZaAfdrusDXRFOdEUYkKIA7_lhnKxelhiGNPjsbMEDnMKPqI3gA7zlzZFnkUTOXlhd69OPuyas2JfOX8ek6lz_e8HKpjBsSyFU6B"/><span class="font-title text-title text-on-surface font-semibold tracking-tight">CloudNote</span></div><div class="px-4 mb-6"><a class="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-[0_2px_8px_rgba(0,74,198,0.25)]" data-path="new-note" href="#"><span class="material-symbols-outlined text-lg">add_circle</span><span>+ 새 노트 작성</span></a></div><nav class="flex-1 px-3 space-y-1" data-active-classes="bg-surface-container-high text-primary font-semibold"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-xl">dashboard</span><span>대시보드</span></a><a aria-current="page" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition-all bg-surface-container-high text-primary font-semibold" data-path="new-note" href="#"><span class="material-symbols-outlined text-xl">edit_document</span><span>노트 작성</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="landing-page" href="#"><span class="material-symbols-outlined text-xl">public</span><span>서비스 소개</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="subscription-pricing" href="#"><span class="material-symbols-outlined text-xl">loyalty</span><span>요금제 및 구독</span></a></nav><div class="px-4 pt-4 border-t border-outline-variant/30 flex items-center gap-3"><img alt="Profile" class="w-9 h-9 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3LRSNVGPJL1s64nznU0kPSLaeUHD8j55EGq7QYM1HmMsJYM8M0raUy5b77Dl2FgdzdeDnxY08A6xPYQYJNhP8Wff6vs3SjXvk0iCpH7k7iBHqS5pWPPvejdhdn-WvanZvLh2Oxz37V_4bzOIA8Mz5BMijUCksuelI6NVtq_s-ixrOmsMSC-9ydasip6EPdxg6YlK4M2Tu3utgneKAC3SXWym3glM-_oEirI01FPziwpSkjwa1q4kGCg"/><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-label-md text-on-surface truncate font-semibold">워크스페이스 멤버</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">user@cloudnote.io</span></div><a class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg" data-path="subscription-pricing" href="#"><span class="material-symbols-outlined text-lg">settings</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-8"><div class="flex items-center gap-4 flex-1 max-w-md"><div class="w-full flex items-center gap-2 px-3 py-1.5 rounded-xl bg-surface-container-high/60 text-on-surface-variant"><span class="material-symbols-outlined text-lg text-outline">search</span><input class="bg-transparent w-full text-on-surface font-body-sm text-body-sm focus:outline-none placeholder:text-outline" placeholder="노트, 태그, 콘텐츠 검색 (⌘K)" type="text"/></div></div><div class="flex items-center gap-4"><a class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all" data-path="new-note" href="#"><span class="material-symbols-outlined text-lg">add</span><span>새 노트</span></a><button class="p-2 text-on-surface-variant hover:text-on-surface rounded-xl hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span></button><div class="flex items-center gap-2 pl-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3LRSNVGPJL1s64nznU0kPSLaeUHD8j55EGq7QYM1HmMsJYM8M0raUy5b77Dl2FgdzdeDnxY08A6xPYQYJNhP8Wff6vs3SjXvk0iCpH7k7iBHqS5pWPPvejdhdn-WvanZvLh2Oxz37V_4bzOIA8Mz5BMijUCksuelI6NVtq_s-ixrOmsMSC-9ydasip6EPdxg6YlK4M2Tu3utgneKAC3SXWym3glM-_oEirI01FPziwpSkjwa1q4kGCg"/></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Top Editor Status & Utility Bar (Sub-header) -->
+<div class="sticky top-16 z-30 flex items-center justify-between px-8 py-2.5 bg-surface/90 backdrop-blur-md shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="뒤로가기" type="button">
+<span class="material-symbols-outlined text-xl">arrow_back</span>
+</button>
+<!-- Breadcrumbs Path -->
+<nav class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant">
+<span class="hover:text-primary cursor-pointer transition-colors">내 워크스페이스</span>
+<span class="material-symbols-outlined text-sm text-outline">chevron_right</span>
+<span class="flex items-center gap-1 hover:text-primary cursor-pointer transition-colors">
+<span class="text-xs">📁</span> 제품 기획
+        </span>
+<span class="material-symbols-outlined text-sm text-outline">chevron_right</span>
+<span class="text-on-surface font-semibold truncate max-w-[220px]">Q4 SaaS 신규 기능 로드맵</span>
+</nav>
+<!-- Sync Status & Stats Capsule -->
+<div class="hidden xl:flex items-center gap-2 pl-4 ml-2 bg-surface-container-low px-3 py-1 rounded-full">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">cloud_done</span>
+<span>방금 전 자동 저장됨</span>
+</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">842단어</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">읽는 시간 3분</span>
+</div>
+</div>
+<!-- Actions (Share, AI, Export, Favorite, Side-toggle) -->
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-xl text-on-surface-variant hover:text-amber-500 hover:bg-surface-container-high transition-colors" title="즐겨찾기" type="button">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-secondary-container/60 hover:bg-secondary-container text-on-secondary-container font-label-md text-label-md transition-all" title="AI 어시스턴트 호출" type="button">
+<span class="material-symbols-outlined text-base">auto_awesome</span>
+<span>AI 생성</span>
+</button>
+<button class="p-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="내보내기 (PDF, Markdown)" type="button">
+<span class="material-symbols-outlined text-xl">ios_share</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-lg">group_add</span>
+<span>공유</span>
+</button>
+<button class="p-2 rounded-xl bg-surface-container-high text-primary hover:bg-surface-container-highest transition-colors ml-1" id="toggle-inspector-btn" title="우측 인스펙터 패널 접기/펼치기" type="button">
+<span class="material-symbols-outlined text-xl">side_navigation</span>
+</button>
+</div>
+</div>
+<!-- Main Workspace Flex Layout (Canvas + Sticky Right Panel) -->
+<div class="flex flex-1 w-full relative">
+<!-- Central Document Canvas Area -->
+<div class="flex-1 min-w-0 flex flex-col items-center pb-32">
+<!-- Sticky Block Formatting Ribbon -->
+<div class="sticky top-[105px] z-20 mt-4 px-3 py-1.5 bg-surface-container-lowest/90 backdrop-blur-xl rounded-2xl shadow-md flex items-center gap-1 text-on-surface-variant max-w-2xl w-auto">
+<!-- Text Styles -->
+<button class="px-2.5 py-1 rounded-lg hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1" type="button">
+<span>본문</span>
+<span class="material-symbols-outlined text-sm text-outline">expand_more</span>
+</button>
+<span class="w-[1px] h-4 bg-outline-variant/40 mx-0.5"></span>
+<!-- Typography Basics -->
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-high hover:text-on-surface flex items-center justify-center font-headline-sm text-headline-sm" title="굵게 (⌘B)" type="button">
+<span class="font-bold text-sm">B</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-high hover:text-on-surface flex items-center justify-center italic font-headline-sm text-headline-sm" title="기울임 (⌘I)" type="button">
+<span class="italic text-sm">I</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-high hover:text-on-surface flex items-center justify-center underline" title="밑줄 (⌘U)" type="button">
+<span class="underline text-sm">U</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-high hover:text-on-surface flex items-center justify-center line-through" title="취소선" type="button">
+<span class="line-through text-sm">S</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-high hover:text-on-surface flex items-center justify-center font-code text-code" title="인라인 코드" type="button">
+<span class="material-symbols-outlined text-base">code</span>
+</button>
+<span class="w-[1px] h-4 bg-outline-variant/40 mx-0.5"></span>
+<!-- List & Block Controls -->
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-high hover:text-on-surface flex items-center justify-center" title="글머리 기호 목록" type="button">
+<span class="material-symbols-outlined text-lg">format_list_bulleted</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-high hover:text-on-surface flex items-center justify-center" title="번호 매기기" type="button">
+<span class="material-symbols-outlined text-lg">format_list_numbered</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container text-primary flex items-center justify-center" title="할 일 체크리스트" type="button">
+<span class="material-symbols-outlined text-lg">check_box</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-high hover:text-on-surface flex items-center justify-center" title="인용구" type="button">
+<span class="material-symbols-outlined text-lg">format_quote</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-high hover:text-on-surface flex items-center justify-center" title="콜아웃 블록" type="button">
+<span class="material-symbols-outlined text-lg">lightbulb</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-high hover:text-on-surface flex items-center justify-center" title="코드 블록" type="button">
+<span class="material-symbols-outlined text-lg">terminal</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-high hover:text-on-surface flex items-center justify-center" title="표(Table)" type="button">
+<span class="material-symbols-outlined text-lg">table</span>
+</button>
+</div>
+<!-- Editor Canvas Wrapper (Max optimal reading width: 780px) -->
+<article class="w-full max-w-[800px] px-6 mt-6 flex flex-col">
+<!-- Document Cover Banner Image -->
+<div class="relative w-full h-44 rounded-3xl overflow-hidden bg-surface-container-high shadow-sm group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Abstract sleek architectural cloud infrastructure gradient with minimal neon geometric waves, modern digital workspace art in royal blue and soft cyan hues" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCS2wjicWauQKqdUknrtNIHbIN4tOWu53eb0OkrfNIruKm07DqKssiSnwW5oG7XhGHM-ld_auNzXdTE-RKb3XJIsilEvpkv5b5AxPF0-IvtOcpEqnlSysf1uOY03WGWkZneK_pvV4rV0dRdn9hjB35bAk3l-LcdHFr7Ggp8TzxImLMy37K0tNBDSxpZsE2l8hRQWz7aTWUdlCKQzRMAvzpnsF8DPaIVWUPMhnvag97w07EA8oalGWjSJA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 right-4 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-2">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-sm text-label-sm hover:bg-surface-container-lowest transition-all" type="button">
+              커버 변경
+            </button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-sm text-label-sm hover:bg-surface-container-lowest transition-all" type="button">
+              위치 재조정
+            </button>
+</div>
+</div>
+<!-- Document Icon & Badges (-mt-8 overlap for depth) -->
+<div class="relative -mt-8 ml-6 flex items-end justify-between z-10">
+<div class="relative group">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-lowest shadow-md flex items-center justify-center text-3xl cursor-pointer hover:bg-surface-container-low transition-colors">
+              🚀
+            </div>
+<button class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-sm" title="이모지 변경" type="button">
+<span class="material-symbols-outlined text-xs">edit</span>
+</button>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+              Sprint 26.4
+            </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              우선순위: P0
+            </span>
+</div>
+</div>
+<!-- Document Main Editable Title -->
+<div class="mt-6">
+<h1 class="font-display text-display text-on-surface outline-none tracking-tight font-bold placeholder:text-outline/40 leading-tight" contenteditable="true" spellcheck="false">
+            2026 Q4 SaaS 신규 기능 로드맵 및 클라우드 동기화 아키텍처
+          </h1>
+</div>
+<!-- Metadata Tag Bar -->
+<div class="flex flex-wrap items-center gap-2 mt-4 pb-4">
+<div class="flex items-center gap-1 px-3 py-1 rounded-lg bg-surface-container-high/80 text-primary font-label-sm text-label-sm">
+<span class="text-xs">#</span>
+<span>제품기획</span>
+<button class="ml-1 text-outline hover:text-on-surface" type="button">×</button>
+</div>
+<div class="flex items-center gap-1 px-3 py-1 rounded-lg bg-surface-container-high/80 text-primary font-label-sm text-label-sm">
+<span class="text-xs">#</span>
+<span>로드맵</span>
+<button class="ml-1 text-outline hover:text-on-surface" type="button">×</button>
+</div>
+<div class="flex items-center gap-1 px-3 py-1 rounded-lg bg-surface-container-high/80 text-primary font-label-sm text-label-sm">
+<span class="text-xs">#</span>
+<span>v2.4-sync</span>
+<button class="ml-1 text-outline hover:text-on-surface" type="button">×</button>
+</div>
+<button class="flex items-center gap-1 px-2.5 py-1 rounded-lg hover:bg-surface-container-high text-outline hover:text-on-surface-variant font-label-sm text-label-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">add</span>
+<span>태그 추가</span>
+</button>
+</div>
+<!-- Document Content Body Blocks -->
+<div class="flex flex-col gap-6 mt-4 font-body-lg text-body-lg text-on-surface leading-relaxed">
+<!-- AI Executive Summary Callout Block -->
+<div class="relative rounded-2xl bg-surface-container-low p-5 shadow-sm flex items-start gap-4">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-xl">lightbulb</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between mb-1">
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold">AI 자동 요약 및 주요 목표</span>
+<span class="font-label-sm text-label-sm text-secondary/70">클라우드엔진 v4 기준 분석</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                이번 릴리즈는 <strong class="text-on-surface font-semibold">오프라인 퍼스트(Offline-First) 동기화</strong> 및 <strong class="text-on-surface font-semibold">실시간 다중 커서 협업 엔진(CRDT 기반)</strong> 구축이 핵심 목표입니다. 네트워크 단절 시에도 0ms 레이턴시로 로컬 변경사항을 버퍼링한 뒤 자동 병합합니다.
+              </p>
+</div>
+</div>
+<!-- Section 1: Objectives & Heading -->
+<div class="group relative pt-2">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight mb-2">
+              1. 핵심 아키텍처 개편 개요
+            </h2>
+<p class="text-on-surface-variant">
+              기존 WebSocket 폴백 체계를 개선하여 WebRTC 데이터 채널을 병행 지원합니다. 이를 통해 동시 편집자 간의 상태 전달 오버헤드를 60% 이상 절감하며, 클라이언트 측 상태 영속성을 보장하기 위해 SQLite WASM 로컬 복제본을 유지합니다.
+            </p>
+</div>
+<!-- Interactive Checklist Block -->
+<div class="rounded-2xl bg-surface-container-lowest p-6 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">checklist</span>
+                스프린트 마일스톤 할 일 목록 (Q4 Sprint)
+              </h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2.5 py-0.5 rounded-full font-medium">
+                완료율: 66% (2/3)
+              </span>
+</div>
+<!-- Checklist Item 1 (Completed) -->
+<label class="flex items-start gap-3.5 p-2 rounded-xl hover:bg-surface-container-low transition-colors cursor-pointer group">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex-1 min-w-0">
+<span class="line-through text-outline font-body-md text-body-md">CRDT 상태 충돌 해결 알고리즘 벤치마크 및 PoC 완료</span>
+<span class="block font-label-sm text-label-sm text-outline/80">담당: 인프라팀 • 10월 12일 배포됨</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-sm self-center">check_circle</span>
+</label>
+<!-- Checklist Item 2 (Completed) -->
+<label class="flex items-start gap-3.5 p-2 rounded-xl hover:bg-surface-container-low transition-colors cursor-pointer group">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex-1 min-w-0">
+<span class="line-through text-outline font-body-md text-body-md">IndexedDB 기반 캐시 계층에서 SQLite WASM 엔진으로 전환</span>
+<span class="block font-label-sm text-label-sm text-outline/80">담당: 코어 프론트엔드팀 • 성능 테스트 통과</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-sm self-center">check_circle</span>
+</label>
+<!-- Checklist Item 3 (In Progress) -->
+<label class="flex items-start gap-3.5 p-2 rounded-xl bg-surface-container-low/60 transition-colors cursor-pointer group">
+<input class="mt-1 w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex-1 min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium">다중 사용자 세션 가상 커서 렌더링 및 레이턴시 보정 레이어 구현</span>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm text-primary font-semibold">진행 중 (PR #402 리뷰 대기)</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">담당: 협업 UI팀</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm self-center">Review</span>
+</label>
+<!-- Add Task Input Row -->
+<div class="flex items-center gap-2 px-2 pt-2 text-outline hover:text-on-surface-variant transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm">add</span>
+<span class="font-label-md text-label-md">새로운 태스크 블록 추가하기...</span>
+</div>
+</div>
+<!-- Section 2: Code Snippet Block -->
+<div class="flex flex-col gap-2 pt-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+              2. 오프라인 동기화 큐 인터페이스 (SyncQueue Engine)
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              네트워크 단절 시 모든 변경 트랜잭션은 단일 암호화 로그 스트림으로 버퍼링되며, 재연결 즉시 멱등성(Idempotent) 토큰과 함께 배치 전송됩니다.
+            </p>
+<div class="rounded-2xl overflow-hidden bg-inverse-surface text-inverse-on-surface shadow-md">
+<div class="flex items-center justify-between px-4 py-2 bg-black/20 text-xs text-outline-variant font-code">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+<span class="ml-2 font-medium">SyncCoordinator.ts</span>
+</div>
+<div class="flex items-center gap-2">
+<span>TypeScript</span>
+<button class="hover:text-white transition-colors" title="코드 복사" type="button">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+</button>
+</div>
+</div>
+<pre class="p-4 font-code text-code overflow-x-auto leading-relaxed"><code class="text-white"><span class="text-secondary-fixed">interface</span> <span class="text-secondary-container">OfflineCommitPayload</span> {
+  documentId: <span class="text-tertiary-fixed">string</span>;
+  vectorClock: <span class="text-tertiary-fixed">Map</span><<span class="text-tertiary-fixed">string</span>, <span class="text-tertiary-fixed">number</span>>;
+  patchOperations: <span class="text-primary-fixed">CRDTOperation</span>[];
+  idempotencyToken: <span class="text-tertiary-fixed">string</span>;
+}
+
+<span class="text-secondary-fixed">export async function</span> <span class="text-primary-fixed-dim">dispatchSyncQueue</span>(
+  payload: <span class="text-secondary-container">OfflineCommitPayload</span>
+): <span class="text-tertiary-fixed">Promise</span><<span class="text-secondary-container">SyncAck</span>> {
+  <span class="text-outline">/* 1. 로컬 SQLite Commit Lock 획득 */</span>
+  <span class="text-secondary-fixed">const</span> lock = <span class="text-secondary-fixed">await</span> LocalDB.<span class="text-primary-fixed-dim">acquireAtomicLock</span>(payload.documentId);
+  <span class="text-secondary-fixed">try</span> {
+    <span class="text-secondary-fixed">return await</span> CloudChannel.<span class="text-primary-fixed-dim">broadcastDelta</span>(payload);
+  } <span class="text-secondary-fixed">finally</span> {
+    lock.<span class="text-primary-fixed-dim">release</span>();
+  }
+}</code></pre>
+</div>
+</div>
+<!-- Slash Command Popover & Interactive Tooltip Insertion Trigger -->
+<div class="relative py-4">
+<div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container-high/40 text-outline hover:bg-surface-container-high hover:text-on-surface-variant transition-all cursor-text border border-transparent">
+<span class="font-code text-code text-primary font-bold">/</span>
+<span class="font-body-md text-body-md">명령어를 입력하려면 '/'를 누르거나 Space를 눌러 AI 작성 시작</span>
+</div>
+<!-- Popover Command Menu (Simulated Active State) -->
+<div class="absolute left-6 top-14 z-30 w-72 rounded-2xl bg-surface-container-lowest p-2 shadow-xl ring-1 ring-black/5 flex flex-col gap-0.5">
+<div class="px-3 py-1.5 text-[11px] font-bold text-outline uppercase tracking-wider font-label-sm">
+                기본 블록
+              </div>
+<button class="flex items-center gap-3 px-3 py-2 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors text-left" type="button">
+<span class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">format_size</span>
+</span>
+<div>
+<div class="font-label-md text-label-md font-semibold">제목 1 (H1)</div>
+<div class="font-label-sm text-label-sm text-outline">대형 섹션 구분 제목</div>
+</div>
+</button>
+<button class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface hover:bg-surface-container-low transition-colors text-left" type="button">
+<span class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+</span>
+<div>
+<div class="font-label-md text-label-md font-semibold">체크리스트</div>
+<div class="font-label-sm text-label-sm text-outline">할 일 및 마일스톤 추적</div>
+</div>
+</button>
+<button class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface hover:bg-surface-container-low transition-colors text-left" type="button">
+<span class="w-8 h-8 rounded-lg bg-secondary-container/60 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">auto_awesome</span>
+</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-secondary">AI 브레인스토밍</div>
+<div class="font-label-sm text-label-sm text-outline">아이디어 및 아웃라인 생성</div>
+</div>
+</button>
+</div>
+</div>
+<!-- Live Collaborative Avatars Bar -->
+<div class="flex items-center justify-between pt-6 border-t border-outline-variant/20">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2 overflow-hidden">
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface object-cover" data-alt="Professional tech designer avatar portrait in minimalist ambient office lighting with high resolution detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY6Ds75S0iQXprGXfZ3-sSZqOHyMGdua3WQM2Zw4R8KbU0ey7dy0Q5ewFofaEB_81fGoai--zpw9348-01abu4gEnJ3dAQNwPcqpgNHoU4Jb3-KNTvx0PwwowRf1ua2lYlWs3y2HV6Y4iGolaKX4ZoiJm2YAzhUNC5p8_Tx1FzIAEIrsuQZzOLjRl5ak2byWiM6fCibTWXnmsoc9LIjulKyAo0Zirspoa6cssQNqBP6AkdcE1MHWWmJg"/>
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface object-cover" data-alt="Software engineer avatar portrait smiling in natural light with crisp focus on clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWf6S7dZPXiNLE001Je_TcVbRzBDPBpK05zPfGTgYQ35bchP4yipTuYYzNWR0GeeK3y3-V8lYGDUH3C9zzQ3hm5js1bBTeVx_j8fnMbmumAj0j8H4YFtmmAb0Y2g_r_UADcJE5NrQwOwAd20W4mBGmor5djiVomC4_8SQT5rcRxbS4Zq33Y6dPrbjefMcPiZCH3qf0rjM2OQRgOMZNApYByWIW_Bq_5IbRSR-1eyjpIqYJAtX6Rw0R0g"/>
+<div class="inline-flex h-8 w-8 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold items-center justify-center ring-2 ring-surface">
+                  +3
+                </div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5명의 팀원이 이 문서를 실시간 편집 중</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-green-500/10 text-emerald-600 font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                실시간 동기화 활성
+              </span>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Right Collapsible Panel (TOC & AI Assistant Workspace) -->
+<aside class="w-80 shrink-0 sticky top-[105px] h-[calc(100vh-120px)] overflow-y-auto px-5 py-4 mr-6 rounded-3xl bg-surface-container-lowest shadow-sm flex flex-col gap-6" id="inspector-panel">
+<!-- Panel Header Tabs -->
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-xl bg-surface-container text-primary font-label-md text-label-md font-semibold" type="button">
+            문서 개요 (TOC)
+          </button>
+<button class="px-3 py-1.5 rounded-xl text-on-surface-variant hover:text-on-surface font-label-md text-label-md" type="button">
+            AI 대화
+          </button>
+</div>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" id="close-inspector-btn" type="button">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<!-- Table of Contents Section -->
+<div class="flex flex-col gap-2">
+<div class="text-[11px] font-bold text-outline uppercase tracking-wider font-label-sm">
+          목차 바로가기
+        </div>
+<nav class="flex flex-col space-y-1 font-label-md text-label-md">
+<a class="px-2.5 py-1.5 rounded-lg bg-surface-container-low text-primary font-medium truncate flex items-center gap-2" href="#">
+<span class="w-1 h-3 rounded-full bg-primary"></span>
+<span>1. 핵심 아키텍처 개편 개요</span>
+</a>
+<a class="px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface truncate pl-5" href="#">
+            스프린트 마일스톤 목록
+          </a>
+<a class="px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface truncate" href="#">
+<span>2. 오프라인 동기화 큐 인터페이스</span>
+</a>
+<a class="px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface truncate pl-5" href="#">
+            SyncCoordinator TypeScript
+          </a>
+<a class="px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface truncate" href="#">
+<span>3. 백엔드 샤딩 및 배포 일정</span>
+</a>
+</nav>
+</div>
+<!-- AI Assistant Quick Insights Card -->
+<div class="rounded-2xl bg-surface-container-low p-4 flex flex-col gap-3 shadow-xs">
+<div class="flex items-center gap-2 text-secondary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-lg">psychology</span>
+<span class="font-semibold text-sm">CloudNote AI 제안</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          작성된 문서에 보안 정책(데이터 암호화 및 E2E 키 교환) 세션이 누락되었습니다. 관련 템플릿을 생성할까요?
+        </p>
+<button class="flex items-center justify-center gap-1.5 w-full py-2 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary/90 transition-all shadow-xs" type="button">
+<span class="material-symbols-outlined text-sm">magic_button</span>
+<span>보안 섹션 자동 추가</span>
+</button>
+</div>
+<!-- Document Meta Stats -->
+<div class="mt-auto pt-4 border-t border-outline-variant/30 flex flex-col gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex justify-between items-center">
+<span>최초 생성자</span>
+<span class="font-medium text-on-surface">김지수 수석 기획자</span>
+</div>
+<div class="flex justify-between items-center">
+<span>최종 수정 시간</span>
+<span class="font-medium text-on-surface">오늘 오후 2:42</span>
+</div>
+<div class="flex justify-between items-center">
+<span>동기화 버전</span>
+<span class="font-code text-code text-primary">rev-88402f</span>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<script>
+  (function initNoteEditor() {
+    const toggleBtn = document.getElementById('toggle-inspector-btn');
+    const closeBtn = document.getElementById('close-inspector-btn');
+    const inspectorPanel = document.getElementById('inspector-panel');
+
+    if (toggleBtn && inspectorPanel) {
+      toggleBtn.addEventListener('click', () => {
+        inspectorPanel.classList.toggle('hidden');
+      });
+    }
+
+    if (closeBtn && inspectorPanel) {
+      closeBtn.addEventListener('click', () => {
+        inspectorPanel.classList.add('hidden');
+      });
+    }
+  })();
+</script></main></div></body></html>
